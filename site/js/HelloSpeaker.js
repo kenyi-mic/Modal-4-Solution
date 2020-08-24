@@ -1,14 +1,9 @@
-(function (window) {
-    var helloSpeaker = {};
-    helloSpeaker.name = prompt("Enter the second name: ");
+(function(window) {
+	var speakWord = "Hello";
+	var helloSpeaker = function (name) {
+		console.log(speakWord + " " + name);
+	}
 
-    names = name;
-    var speakWord = "Hello ";
-    helloSpeaker.speak = function () {
-      console.log(speakWord + helloSpeaker.name);
-    }
-  
-    window.helloSpeaker = helloSpeaker;
-  
-  })(window);
-  
+	window.helloSpeaker = helloSpeaker;
+
+})(window);
